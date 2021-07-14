@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "title": "Propcierge",
+    "description": "Cloud based end to end Uber like Cab Aggregation Platform",
+    "image": {
+      "src": "../../images/project-2.jpg"
+    },
+    "category": "projects"
+  },
+  {
+    "id": "2",
+    "title": "TALE",
+    "description": "World class end to end cinema ticketing apps and website.",
+    "image": {
+      "src": "../../images/project-3.jpg"
+    },
+    "category": "projects"
+  },
+  {
+    "id": "3",
+    "title": "Spony",
+    "description": "End to end Digital Platform for real estate and home services.",
+    "image": {
+      "src": "../../images/project-4.jpg"
+    },
+    "category": "projects"
+  },
+  {
+    "id": "4",
+    "title": "Sarva",
+    "description": "Hire eco friendly electric scooters for rent",
+    "image": {
+      "src": "../../images/project-2.jpg"
+    },
+    "category": "projects"
+  },
+  {
+    "id": "5",
+    "title": "Spony",
+    "description": "End to end Digital Platform for real estate and home services.",
+    "image": {
+      "src": "../../images/project-4.jpg"
+    },
+    "category": "projects"
+  },
+  {
+    "id": "6",
+    "company": "Calm Global",
+    "name": "Balogun L",
+    "role": "Developer",
+    "content": "Cloud based end to end Uber like Cab Aggregation Platform",
+    "image": {
+      "src": "../../images/avatar-2.jpg"
+    },
+    "category": "testimonial"
+  }
+]

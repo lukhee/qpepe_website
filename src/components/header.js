@@ -1,34 +1,52 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import { Nav, Container, Navbar } from "react-bootstrap"
+
+import { navData } from "../utitlity/data"
+import * as style from "../styles/header.module.css"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
+  <Navbar sticky="top" collapseOnSelect expand="sm" className="bg-light">
+    <Container className={style.header}>
+      <Navbar.Brand
+        className="justify-content-between"
+        style={{ fontSize: "1.8rem", fontWeight: "bold" }}
+      >
+        <Link to="/">
+          qp<span className="bg-warning">epe </span>
         </Link>
-      </h1>
-    </div>
-  </header>
+      </Navbar.Brand>
+      <Navbar.Toggle
+        style={{ padding: "3px 7px", fontSize: "1rem" }}
+        aria-controls="responsive-navbar-nav"
+      />
+      <Navbar.Collapse
+        id="responsive-navbar-nav"
+        className="justify-content-end"
+      >
+        <Nav className="ps-1 mt-2">
+          {navData.map(nav => (
+            <h5
+              key={nav.title}
+              className={
+                nav.title === "Contact-Us" ? style.contact : style.navLink
+              }
+            >
+              <Link
+                to={nav.linkTo}
+                activeClassName={
+                  nav.title !== "Contact-Us" ? style.underline : ""
+                }
+              >
+                {nav.title}
+              </Link>
+            </h5>
+          ))}
+        </Nav>
+      </Navbar.Collapse>
+    </Container>
+  </Navbar>
 )
 
 Header.propTypes = {
