@@ -2,7 +2,7 @@ import * as React from "react"
 import { navigate, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Testimonial from "../components/widgets/testimonial"
-import DropDown from "../components/widgets/dropDown"
+import WhatWeDo from "../components/widgets/whatWeDo"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -87,9 +87,13 @@ const IndexPage = ({ data }) => {
                   unique, <span className="underline"> innovative </span> and{" "}
                   <span className="underline"> modern websites.</span>
                 </h3>
-                <div>
+                <div
+                  data-sal-delay="600"
+                  data-sal="fade"
+                  data-sal-easing="ease"
+                >
                   <h4 className="mb-1">Everything at one place</h4>
-                  <p className="fst-italic">
+                  <p>
                     The foundation of MacAppStudio is the friendship between
                     George and Suresh. MacAppStudio is founded based on trust
                     and that is the core of our company culture till today. Our
@@ -97,16 +101,24 @@ const IndexPage = ({ data }) => {
                     simple to use and which would transform lives of millions.
                   </p>
                 </div>
-                <div>
+                <div
+                  data-sal-delay="800"
+                  data-sal="fade"
+                  data-sal-easing="ease"
+                >
                   <h4 className="mb-1">You are never alone</h4>
-                  <p className="fst-italic">
+                  <p>
                     Our devoted customer support team with great problem solving
                     skills is always ready to assist you.
                   </p>
                 </div>
-                <div>
+                <div
+                  data-sal-delay="1000"
+                  data-sal="fade"
+                  data-sal-easing="ease"
+                >
                   <h4 className="mb-1">On-the-go solutions</h4>
-                  <p className="fst-italic">
+                  <p>
                     Keep up with back-office tasks within a few clicks. It’s not
                     a problem if you are on your way somewhere! SabeeApp hotel
                     management software runs in the cloud and you can reach it
@@ -116,7 +128,7 @@ const IndexPage = ({ data }) => {
               </div>
               <div className="col-md-6 my-auto">
                 <div>
-                  {/* <p className="fst-italic">
+                  {/* <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p> */}
@@ -124,15 +136,12 @@ const IndexPage = ({ data }) => {
               </div>
             </div>
           </div>
-          <DropDown />
+          <WhatWeDo />
         </div>
       </div>
 
       {/* Clients */}
       <div className="container pb-5 pt-4">
-        {/* <p>
-        <span className="underline fs-3"> Our Clients </span>
-      </p> */}
         <div className="row justify-content-around text-center m-auto">
           <div className="col col-lg-1 col-md-4 col-sm-3 col-xs-3 text-center m-auto">
             <StaticImage
@@ -140,7 +149,26 @@ const IndexPage = ({ data }) => {
               alt="logo 2"
               placeholder="blurred"
               width={200}
-              // height={30}
+            />
+          </div>
+
+          <div className="col col-lg-1 col-md-4 col-sm-3 col-xs-3 text-center m-auto">
+            <StaticImage
+              src="../images/logo/product_logo1.svg"
+              alt="logo 2"
+              placeholder="blurred"
+              width={200}
+              className="m-auto"
+            />
+          </div>
+
+          <div className="col col-lg-1 col-md-4 col-sm-3 col-xs-3 text-center m-auto">
+            <StaticImage
+              src="../images/logo/product_logo3.svg"
+              alt="logo 2"
+              placeholder="blurred"
+              width={200}
+              className="m-auto"
             />
           </div>
 
@@ -150,7 +178,6 @@ const IndexPage = ({ data }) => {
               alt="logo 2"
               placeholder="blurred"
               width={200}
-              // height={40}
               className="m-auto"
             />
           </div>
@@ -161,29 +188,6 @@ const IndexPage = ({ data }) => {
               alt="logo 2"
               placeholder="blurred"
               width={200}
-              // height={40}
-              className="m-auto"
-            />
-          </div>
-
-          <div className="col col-lg-1 col-md-4 col-sm-3 col-xs-3 text-center m-auto">
-            <StaticImage
-              src="../images/logo/product_logo5.svg"
-              alt="logo 2"
-              placeholder="blurred"
-              width={200}
-              // height={40}
-              className="m-auto"
-            />
-          </div>
-
-          <div className="col col-lg-1 col-md-4 col-sm-3 col-xs-3 text-center m-auto">
-            <StaticImage
-              src="../images/logo/product_logo4.svg"
-              alt="logo 2"
-              placeholder="blurred"
-              width={200}
-              // height={40}
               className="m-auto"
             />
           </div>

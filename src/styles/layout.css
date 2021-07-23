@@ -660,6 +660,7 @@ pre tt:after {
   padding-right: 5%;
   border: 1px solid #ddd;
   height: 286px;
+  border-radius: 20px;
 }
 
 .carousel .control-dots {

@@ -6,23 +6,34 @@ import {
   faProjectDiagram,
 } from "@fortawesome/free-solid-svg-icons"
 
-const DropDown = () => {
+const WhatWeDo = () => {
   return (
-    <div className="mt-5">
+    <div className="mt-5 container">
       <p className="mt-4 text-center">
-        <span className="underline fs-3"> What we offer </span>
+        <span
+          className="underline fs-3"
+          data-sal-delay="100"
+          data-sal="zoom-in"
+          data-sal-easing="ease"
+        >
+          What we offer
+        </span>
       </p>
       <div className="row justify-content-between justify-content-between">
         {[faChartLine, faGem, faProjectDiagram].map(data => (
-          <div className="mb-2 col-12 col-md-4 mb-5" key={data}>
-            <div className="row">
+          <div
+            className="mb-2 col-12 col-md-4 mb-4 "
+            key={data}
+            data-sal-delay="300"
+            data-sal="slide-left"
+            data-sal-easing="ease"
+          >
+            <div className="row p-3 border border-2 rounded m-1">
               <div className="col-md-2 col-12 mb-1 text-center">
                 <FontAwesomeIcon size="2x" icon={data} className="text-dark" />
               </div>
               <div className="col-md-10 col-12 text-center">
-                <h3 className="mb-3 text-md-start">
-                  Development
-                </h3>
+                <h3 className="mb-3 text-md-start">Development</h3>
                 <p className="mb-1 text-md-start">
                   <span className="text-warning"> Manage </span> your daily
                   administrative tasks conveniently from one place.
@@ -38,4 +49,4 @@ const DropDown = () => {
   )
 }
 
-export default DropDown
+export default WhatWeDo

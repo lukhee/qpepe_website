@@ -1,6 +1,6 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { navigate } from "gatsby"
+import { navigate, Link } from "gatsby"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
@@ -65,30 +65,56 @@ const Footer = ({ siteTitle }) => (
           </div>
           <div className="col-md-5">
             <h3 className="pt-3 text-warning"> Supports </h3>
-            <p className='textSize_16 mb-2'> Privacy </p>
-            <p className='textSize_16 mb-2'> Projects </p>
-            <p className='textSize_16 mb-2'> FAQ </p>
+            <Link to="/">
+              <p className="textSize_16 mb-2"> What we do? </p>
+            </Link>
+            <p className="textSize_16 mb-2"> Our Projects </p>
+            <p className="textSize_16 mb-2"> Contact us </p>
             <p className=" text-white">
-              <FontAwesomeIcon
-                size="2x"
-                icon={faFacebookF}
-                className="me-3 pe-2 text-warning"
-              />
-              <FontAwesomeIcon
-                size="2x"
-                icon={faInstagram}
-                className="me-3 pe-2 text-warning"
-              />
-              <FontAwesomeIcon
-                size="2x"
-                icon={faTwitter}
-                className="me-3 pe-2 text-warning"
-              />
-              <FontAwesomeIcon
-                size="2x"
-                icon={faLinkedinIn}
-                className="me-3 pe-2 text-warning"
-              />
+              <a
+                href="https://example.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  size="2x"
+                  icon={faFacebookF}
+                  className="me-3 pe-2 text-warning"
+                />
+              </a>
+              <a
+                href="https://example.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  size="2x"
+                  icon={faInstagram}
+                  className="me-3 pe-2 text-warning"
+                />
+              </a>
+              <a
+                href="https://example.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  size="2x"
+                  icon={faTwitter}
+                  className="me-3 pe-2 text-warning"
+                />
+              </a>
+              <a
+                href="https://example.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  size="2x"
+                  icon={faLinkedinIn}
+                  className="me-3 pe-2 text-warning"
+                />
+              </a>
             </p>
           </div>
         </div>

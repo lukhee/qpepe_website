@@ -1,15 +1,39 @@
-import * as React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 
 import ReCAPTCHA from "react-google-recaptcha"
+import emailjs from "emailjs-com"
+
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Toast from "../components/widgets/toast"
 
-const site_key = "6Le3jFUbAAAAABQsfEn8Zjyk32hFk6R4nqoipDCO"
+const service_id = process.env.EMAILJS_SERVICE_ID
+const template_id = process.env.EMAILJS_TEMPLATE_ID
+const user_id = process.env.EMAILJS_USER_ID
+// ! please change the secret key from recapcha
+const recaptha_key = process.env.RECAPTHA_SECRET_KEY
 
 const ContactPage = () => {
-  const onChange = () => {
-    console.log("i am recaptha")
+  const [toastValue, setToastValue] = useState(false)
+  const [visibility, setVisibility] = useState(false)
+
+  const recaptchaHandler = value => {
+    setVisibility(true)
+  }
+
+  const sendEmail = e => {
+    e.preventDefault()
+    emailjs.sendForm(service_id, template_id, e.target, user_id).then(
+      result => {
+        console.log(result.text)
+        setToastValue(true)
+      },
+      error => {
+        console.log(error.text)
+      }
+    )
+    e.target.reset()
   }
   return (
     <Layout>
@@ -21,39 +45,51 @@ const ContactPage = () => {
           </h1>
         </div>
         <div className="py-4 bg-white">
-          <div className="container">
+          <div className="container position-relative">
+            <Toast toastValue={toastValue} />
             <div className="row justify-content-around">
               <div className="text-center col-md-5 shadow-lg pt-4 p-3 rounded">
-                <form>
+                <form onSubmit={sendEmail}>
                   <div className="row">
-                    <label for="email" class="form-label text-start">
+                    <label
+                      htmlFor="full_name"
+                      className="form-label text-start"
+                    >
                       Full_Name
                     </label>
-                    <div class="form-group mb-3">
-                      <input
-                        type="email"
-                        class="form-control bg-light"
-                        id="email"
-                      />
-                    </div>
-                    <label for="fullname" class="form-label text-start">
-                      Work Email
-                    </label>
-                    <div class="form-group mb-3">
+                    <div className="form-group mb-3">
                       <input
                         type="text"
-                        class="form-control bg-light"
-                        id="name"
+                        className="form-control bg-light"
+                        id="full_name"
+                        name="full_name"
+                        required
+                      />
+                    </div>
+                    <label htmlFor="email" className="form-label text-start">
+                      Work Email
+                    </label>
+                    <div className="form-group mb-3">
+                      <input
+                        type="email"
+                        className="form-control bg-light"
+                        id="email"
+                        name="email"
+                        required
                       />
                     </div>
                   </div>
-                  <label for="comment" class="form-label text-start w-100">
+                  <label
+                    htmlFor="message"
+                    className="form-label text-start w-100"
+                  >
                     Comment
                   </label>
-                  <div class="form-group mb-3">
+                  <div className="form-group mb-3">
                     <textarea
-                      class="form-control bg-light"
-                      id="exampleFormControlTextarea1"
+                      className="form-control bg-light"
+                      id="massage"
+                      name="massage"
                       rows="7"
                     ></textarea>
                   </div>
@@ -67,11 +103,15 @@ const ContactPage = () => {
                   <div>
                     <ReCAPTCHA
                       className="w-100 my-3"
-                      sitekey={site_key}
-                      onChange={onChange}
+                      sitekey={recaptha_key}
+                      onChange={recaptchaHandler}
                     />
                   </div>
-                  <button className="btn w-100 fw-bold btn-warning col-12">
+                  <button
+                    disabled={!visibility}
+                    className="btn w-100 fw-bold btn-warning col-12"
+                    type="submit"
+                  >
                     Submit
                   </button>
                 </form>
