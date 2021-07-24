@@ -1,5 +1,5 @@
 import React from "react"
-import { navigate, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"

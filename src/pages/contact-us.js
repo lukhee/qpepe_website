@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { Link } from "gatsby"
 
 import ReCAPTCHA from "react-google-recaptcha"
 import emailjs from "emailjs-com"

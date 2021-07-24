@@ -1,5 +1,4 @@
 import React from "react"
-import { graphql } from "gatsby"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { Carousel } from "react-responsive-carousel"

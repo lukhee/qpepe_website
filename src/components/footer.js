@@ -10,12 +10,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 import {
   faLinkedinIn,
-  faFacebookF,
   faTwitter,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons"
-
-import * as style from "../styles/footer.module.css"
 
 const Footer = ({ siteTitle }) => (
   <footer className="bg-dark text-white py-4">

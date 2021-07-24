@@ -2,8 +2,6 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { Nav, Container, Navbar } from "react-bootstrap"
-
-import { navData } from "../utitlity/data"
 import * as style from "../styles/header.module.css"
 
 const Header = ({ siteTitle }) => (
