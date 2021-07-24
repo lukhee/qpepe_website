@@ -11,7 +11,7 @@ const NotFoundPage = () => (
     <div className="container bg-light text-center my-4">
       <div className="col col-md-6text-center m-auto">
         <StaticImage
-          src="../images/page-not-found.svg"
+          src="../images/logo/page-not-found.svg"
           alt="logo 2"
           placeholder="blurred"
           width={200}
