@@ -7,14 +7,14 @@ import { navData } from "../utitlity/data"
 import * as style from "../styles/header.module.css"
 
 const Header = ({ siteTitle }) => (
-  <Navbar sticky="top" collapseOnSelect expand="md" className="bg-secondary">
+  <Navbar sticky="top" collapseOnSelect expand="md" className="bg-light">
     <Container className={style.header}>
       <Navbar.Brand
         className="justify-content-between"
         style={{ fontSize: "1.8rem", fontWeight: "bold" }}
       >
         <Link to="/">
-          qp<span className="bg-warning">epe </span>
+          qp<span className="bg-secondary text-white">epe </span>
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle
@@ -44,7 +44,7 @@ const Header = ({ siteTitle }) => (
             <Link
               to="/contact-us"
               activeClassName={style.underline}
-              className="btn btn-warning btn-sm fw-bold"
+              className="btn btn-secondary text-white btn-sm fw-bold"
             >
               Contacts Us
             </Link>

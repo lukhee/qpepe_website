@@ -5,7 +5,6 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { Carousel } from "react-responsive-carousel"
 
 const Testimonials = ({ data }) => {
-  console.log(data[0].image.src.childrenImageSharp[0].gatsbyImageData)
   return (
     <Carousel
       showArrows={false}

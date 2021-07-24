@@ -22,13 +22,13 @@ const Footer = ({ siteTitle }) => (
     <div className="container">
       <div className="row">
         <div className="col-md-6">
-          <h3 className="pt-3 text-warning"> Stay Connected</h3>
+          <h3 className="pt-3"> Stay Connected</h3>
           <h2 className="fs-1"> Let's build the next big thing together </h2>
           <button
             onClick={() => navigate("/contact-us")}
-            className="btn btn-warning mb-3 rounded-0"
+            className="btn btn-light fw-bold text-dark mb-3"
           >
-            Get in Touch{" "}
+            Get in Touch
             <span className="ms-2 p-1 px-2 rounded-circle bg-dark">
               <FontAwesomeIcon
                 size="1x"
@@ -38,11 +38,12 @@ const Footer = ({ siteTitle }) => (
             </span>
           </button>
         </div>
-        <div className="col-md-6 row justify-content-between">
+        <div className="col-md-6 row justify-content-between fw-bold">
           <div className="col-md-6">
-            <h3 className="pt-3 text-warning"> Company </h3>
-            <p className="mb-3 textSize_16">
-              App Development Technology Consulting Research and Development
+            <h3 className="pt-3 "> Company </h3>
+            <p className="mb-2 textSize_16">
+              <span className="bg-white text-dark fw-bold p-1 me-1">qpepe</span>
+              Development Technology Consulting Research and Development
             </p>
             <p className="mb-1">
               <FontAwesomeIcon
@@ -51,7 +52,7 @@ const Footer = ({ siteTitle }) => (
                 icon={faEnvelope}
                 className="me-3"
               />
-              <span className="textSize_16"> moshood@gmail.com </span>
+              <span className="textSize_16">moshood@gmail.com </span>
             </p>
             <p>
               <FontAwesomeIcon
@@ -64,12 +65,17 @@ const Footer = ({ siteTitle }) => (
             </p>
           </div>
           <div className="col-md-5">
-            <h3 className="pt-3 text-warning"> Supports </h3>
-            <Link to="/">
+            <h3 className="pt-3 "> Supports </h3>
+            <Link className='text-white' to="/">
               <p className="textSize_16 mb-2"> What we do? </p>
             </Link>
-            <p className="textSize_16 mb-2"> Our Projects </p>
-            <p className="textSize_16 mb-2"> Contact us </p>
+            <Link className='text-white' to="/projects">
+              <p className="textSize_16 mb-2"> Our Projects </p>
+            </Link>
+
+            <Link className='text-white' to="/contact-us">
+              <p className="textSize_16 mb-2"> Contact us </p>
+            </Link>
             <p className=" text-white">
               <a
                 href="https://example.com"
@@ -78,19 +84,8 @@ const Footer = ({ siteTitle }) => (
               >
                 <FontAwesomeIcon
                   size="2x"
-                  icon={faFacebookF}
-                  className="me-3 pe-2 text-warning"
-                />
-              </a>
-              <a
-                href="https://example.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon
-                  size="2x"
                   icon={faInstagram}
-                  className="me-3 pe-2 text-warning"
+                  className="me-3 p-2 border-2 rounded-circle in"
                 />
               </a>
               <a
@@ -101,7 +96,7 @@ const Footer = ({ siteTitle }) => (
                 <FontAwesomeIcon
                   size="2x"
                   icon={faTwitter}
-                  className="me-3 pe-2 text-warning"
+                  className="me-3 p-2 border-2 rounded-circle tw"
                 />
               </a>
               <a
@@ -112,7 +107,7 @@ const Footer = ({ siteTitle }) => (
                 <FontAwesomeIcon
                   size="2x"
                   icon={faLinkedinIn}
-                  className="me-3 pe-2 text-warning"
+                  className="me-3 p-2 border-2 rounded-circle ldin"
                 />
               </a>
             </p>

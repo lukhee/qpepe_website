@@ -595,12 +595,13 @@ pre tt:after {
   }
 }
 
-.textSize_16{
-  font-size: 16px
+.textSize_16 {
+  font-size: 16px;
 }
 
 .underline {
-  background-image: linear-gradient(#fab901 0%, #fab901 100%);
+  /* background-image: linear-gradient(#fab901 0%, #fab901 100%); */
+  background-image: linear-gradient(#6c757d45 0%, #6c757dad 100%);
   background-size: 100% 0.25em;
   background-repeat: no-repeat;
   background-position: 0 80%;
@@ -736,6 +737,51 @@ pre tt:after {
 
 .App {
   text-align: center;
+}
+
+.fb {
+  color: #3b5998;
+  border: 1px solid #3b5998;
+}
+
+.fb:hover {
+  color: white;
+  background: #3b5998;
+}
+
+.tw {
+  color: #1da1f2;
+  border: 1px solid #1da1f2;
+}
+
+.tw:hover {
+  color: white;
+  background: #1da1f2;
+}
+
+.ldin {
+  color: #0e76a8;
+  border: 1px solid #0e76a8;
+}
+
+.ldin:hover {
+  color: white;
+  background: #0e76a8;
+}
+
+.in {
+  color: #ff1493;
+  border: 1px solid #ff1493;
+}
+
+.in:hover {
+  color: white;
+  background: #ff1493;
+}
+
+.a {
+  color: white;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 934px) {

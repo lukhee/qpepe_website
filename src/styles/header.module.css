@@ -7,7 +7,6 @@
 .header {
   color: #000;
   margin: 0 auto;
-  /* max-width: 1200px; */
 }
 
 .header nav {
@@ -58,5 +57,5 @@
   left: 0;
   right: 0;
   width: 100%;
-  background: #ebaa28;
+  background: #6c757d;
 }

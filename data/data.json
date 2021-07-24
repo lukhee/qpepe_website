@@ -71,5 +71,27 @@
         "category": "testimonial"
       }
     ]
+  },
+  {
+    "whatweoffer": [
+      {
+        "title": "Development",
+        "content": "Manage ~ your daily administrative tasks conveniently from one place. Reservations, invoices, guest communication, housekeeping and reporting.",
+        "fontAwesomeIndex": 0,
+        "category": "what_we_offer"
+      },
+      {
+        "title": "Progress",
+        "content": "Manage ~ your daily administrative tasks conveniently from one place. Reservations, invoices, guest communication, housekeeping and reporting.",
+        "fontAwesomeIndex": 1,
+        "category": "what_we_offer"
+      },
+      {
+        "title": "Development",
+        "content": "Manage ~ your daily administrative tasks conveniently from one place. Reservations, invoices, guest communication, housekeeping and reporting.",
+        "fontAwesomeIndex": 2,
+        "category": "what_we_offer"
+      }
+    ]
   }
 ]

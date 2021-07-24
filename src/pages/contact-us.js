@@ -93,7 +93,7 @@ const ContactPage = () => {
                       rows="7"
                     ></textarea>
                   </div>
-                  <p style={{ fontSize: "14px", textAlign: "left" }}>
+                  <p className='text-muted' style={{ fontSize: "14px", textAlign: "left" }}>
                     By submitting this form you consent to us emailing you
                     occasionally about our products and services. You can
                     unsubscribe from emails at any time, and we will never pass

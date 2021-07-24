@@ -3,6 +3,7 @@ import { navigate, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
+import ContactCard from "../components/widgets/contactCard"
 import Seo from "../components/seo"
 
 const ProjectsPage = ({ data }) => {
@@ -46,17 +47,7 @@ const ProjectsPage = ({ data }) => {
             </div>
           </div>
           {/* Call of Action */}
-          <div className="text-center mt-4 container">
-            <div className="col col-md-10 m-auto bg-light py-5 shadow-sm">
-              <h2> Let’s Transform your business for a change that matters </h2>
-              <button
-                onClick={() => navigate("/contact-us")}
-                className="btn btn-warning mb-3 rounded-0 fw-bold"
-              >
-                Contact Us
-              </button>
-            </div>
-          </div>
+          <ContactCard/>
         </div>
       </div>
     </Layout>
