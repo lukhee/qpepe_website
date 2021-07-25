@@ -108,7 +108,7 @@ const ContactPage = () => {
                   </div> */}
                   <button
                     disabled={!visibility}
-                    className="btn w-100 fw-bold btn-warning col-12"
+                    className="btn w-100 fw-bold btn-success col-12"
                     type="submit"
                   >
                     Submit

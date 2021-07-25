@@ -16,11 +16,16 @@ const IndexPage = ({ data }) => {
       <div className="container py-5">
         <div className="banner">
           <div className="col-12 col-md-6 my-auto col-xs-12 p-2 h-100">
-            <div className="bg-white p-5 shadow-lg h-100 rounded">
+            <div
+              data-sal-delay="200"
+              data-sal="fade"
+              data-sal-easing="ease"
+              className="bg-white p-5 shadow-lg h-100 rounded"
+            >
               <div className="m-auto">
                 <h1
                   className="fs-1"
-                  data-sal-delay="200"
+                  data-sal-delay="400"
                   data-sal="fade"
                   data-sal-easing="ease"
                 >
@@ -28,7 +33,7 @@ const IndexPage = ({ data }) => {
                   Attention
                 </h1>
                 <div
-                  data-sal-delay="800"
+                  data-sal-delay="900"
                   data-sal="fade"
                   data-sal-easing="ease"
                 >
