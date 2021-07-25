@@ -18,21 +18,32 @@ const IndexPage = ({ data }) => {
           <div className="col-12 col-md-6 my-auto col-xs-12 p-2 h-100">
             <div className="bg-white p-5 shadow-lg h-100 rounded">
               <div className="m-auto">
-                <h1 className="fs-1">
+                <h1
+                  className="fs-1"
+                  data-sal-delay="200"
+                  data-sal="fade"
+                  data-sal-easing="ease"
+                >
                   Grab <span className="underline">Your Visitors</span>{" "}
                   Attention
                 </h1>
-                <p className="text-secondary">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s.
-                </p>
-                <button
-                  onClick={() => navigate("/contact-us")}
-                  className="btn btn-secondary fw-bold mb-3"
+                <div
+                  data-sal-delay="800"
+                  data-sal="fade"
+                  data-sal-easing="ease"
                 >
-                  Get in Touch
-                </button>
+                  <p className="text-secondary">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s.
+                  </p>
+                  <button
+                    onClick={() => navigate("/contact-us")}
+                    className="btn btn-secondary fw-bold mb-3"
+                  >
+                    Get in Touch
+                  </button>
+                </div>
               </div>
             </div>
           </div>

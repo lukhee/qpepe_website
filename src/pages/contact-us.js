@@ -15,7 +15,7 @@ const user_id = process.env.EMAILJS_USER_ID
 
 const ContactPage = () => {
   const [toastValue, setToastValue] = useState(false)
-  const [visibility, setVisibility] = useState(false)
+  const [visibility, setVisibility] = useState(true)
 
   const recaptchaHandler = value => {
     setVisibility(true)
