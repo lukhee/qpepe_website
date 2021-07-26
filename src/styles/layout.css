@@ -779,6 +779,11 @@ pre tt:after {
   background: #ff1493;
 }
 
+.fa-height{
+  width: 35px;
+  height: 35px;
+}
+
 .a {
   color: white;
   text-decoration: none;

@@ -108,48 +108,49 @@ const IndexPage = ({ data }) => {
                 </h3>
                 <div
                   data-sal-delay="600"
-                  data-sal="fade"
+                  data-sal="slide-up"
                   data-sal-easing="ease"
+                  className="bg-light shadow border border-light rounded p-2 pt-3 mb-4"
                 >
-                  <h4 className="mb-1">
-                    <span className="bg-secondary text-white px-2 py-1">
+                  <h4 className="mb-2">
+                    <span className="bg-secondary text-white px-2 py-1 rounded">
                       Everything at one place
                     </span>
                   </h4>
-                  <p className="text-secondary">
+                  <p className="text-secondary pb-0 mb-1">
                     The foundation of MacAppStudio is the friendship between
                     George and Suresh. MacAppStudio is founded based on trust
-                    and that is the core of our company culture till today. Our
-                    intention is to create end to end applications which are
-                    simple to use and which would transform lives of millions.
+                    and that is the core of our company culture till today.
                   </p>
                 </div>
                 <div
                   data-sal-delay="800"
-                  data-sal="fade"
+                  data-sal="slide-up"
                   data-sal-easing="ease"
+                  className="bg-light shadow border border-light rounded p-2 pt-3 mb-4"
                 >
-                  <h4 className="mb-1">
-                    <span className="bg-secondary text-white px-2 py-1">
+                  <h4 className="mb-2">
+                    <span className="bg-secondary text-white px-2 py-1 rounded">
                       You are never alone
                     </span>
                   </h4>
-                  <p className="text-secondary">
+                  <p className="text-secondary pb-0 mb-1">
                     Our devoted customer support team with great problem solving
                     skills is always ready to assist you.
                   </p>
                 </div>
                 <div
                   data-sal-delay="1000"
-                  data-sal="fade"
+                  data-sal="slide-up"
                   data-sal-easing="ease"
+                  className="bg-light shadow border border-light rounded p-2 pt-3 mb-4"
                 >
                   <h4 className="mb-1">
-                    <span className="bg-secondary text-white px-2 py-1">
+                    <span className="bg-secondary text-white px-2 py-1 rounded">
                       On-the-go solutions
                     </span>
                   </h4>
-                  <p className="text-secondary">
+                  <p className="text-secondary pb-0 mb-1">
                     Keep up with back-office tasks within a few clicks. It’s not
                     a problem if you are on your way somewhere! SabeeApp hotel
                     management software runs in the cloud and you can reach it
@@ -223,6 +224,9 @@ const IndexPage = ({ data }) => {
       <div className="bg-white py-5">
         <div className="container py-4">
           <div className="row justify-content-around">
+            <p className="text-center mb-0">
+              <span className="underline fs-1"> Satisfied clients </span>
+            </p>
             <Testimonial data={testimonialData} />
           </div>
         </div>

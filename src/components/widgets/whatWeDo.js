@@ -9,7 +9,6 @@ import {
 const fontIcon = [faGem, faChartLine, faProjectDiagram]
 
 const WhatWeDo = ({ whatWeOfferData }) => {
-  console.log(whatWeOfferData)
   return (
     <div className="mt-5 container">
       <p className="mt-4 text-center">
@@ -25,13 +24,13 @@ const WhatWeDo = ({ whatWeOfferData }) => {
       <div className="row justify-content-between justify-content-between">
         {whatWeOfferData.map(data => (
           <div
-            className="mb-2 col-12 col-md-4 mb-4 "
+            className="mb-2 col-12 col-md-4 mb-4"
             key={data.fontAwesomeIndex}
             data-sal-delay="300"
             data-sal="slide-left"
             data-sal-easing="ease"
           >
-            <div className="row p-3 border border-2 rounded m-1 h-100">
+            <div className="row p-3 rounded m-1 h-100 shadow">
               <div className="col-md-2 col-12 mb-1 text-center">
                 <FontAwesomeIcon
                   size="2x"

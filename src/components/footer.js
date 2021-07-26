@@ -7,6 +7,7 @@ import {
   faEnvelope,
   faPhoneAlt,
   faGreaterThan,
+  faMapMarkedAlt,
 } from "@fortawesome/free-solid-svg-icons"
 import {
   faLinkedinIn,
@@ -20,7 +21,10 @@ const Footer = ({ siteTitle }) => (
       <div className="row">
         <div className="col-md-6">
           <h3 className="pt-3"> Stay Connected</h3>
-          <h2 className="fs-1"> Let's build the next big thing together </h2>
+          <h2 className="fs-4 lh-base">
+            <span className="bg-white text-dark fw-bold p-1 me-1">qpepe</span>
+            Development Technology Consulting Research and Development{" "}
+          </h2>
           <button
             onClick={() => navigate("/contact-us")}
             className="btn btn-light fw-bold text-dark mb-3"
@@ -37,12 +41,8 @@ const Footer = ({ siteTitle }) => (
         </div>
         <div className="col-md-6 row justify-content-between fw-bold">
           <div className="col-md-6">
-            <h3 className="pt-3 "> Company </h3>
-            <p className="mb-2 textSize_16">
-              <span className="bg-white text-dark fw-bold p-1 me-1">qpepe</span>
-              Development Technology Consulting Research and Development
-            </p>
-            <p className="mb-1">
+            <h3 className="pt-3 "> Contact </h3>
+            <p className="mb-2">
               <FontAwesomeIcon
                 style={{ marginBottom: "-2px" }}
                 size="1x"
@@ -51,7 +51,7 @@ const Footer = ({ siteTitle }) => (
               />
               <span className="textSize_16">moshood@gmail.com </span>
             </p>
-            <p>
+            <p className="mb-2">
               <FontAwesomeIcon
                 style={{ marginBottom: "-2px" }}
                 size="1x"
@@ -60,17 +60,28 @@ const Footer = ({ siteTitle }) => (
               />
               <span className="textSize_16">00090234765388 </span>
             </p>
+            <p className="mb-2">
+              <FontAwesomeIcon
+                style={{ marginBottom: "-2px" }}
+                size="1x"
+                icon={faMapMarkedAlt}
+                className="me-3"
+              />
+              <span className="textSize_16">
+                50 Graduate Park Suite 340, Organ, MA 9864.{" "}
+              </span>
+            </p>
           </div>
           <div className="col-md-5">
             <h3 className="pt-3 "> Supports </h3>
-            <Link className='text-white' to="/">
+            <Link className="text-white" to="/">
               <p className="textSize_16 mb-2"> What we do? </p>
             </Link>
-            <Link className='text-white' to="/projects">
+            <Link className="text-white" to="/projects">
               <p className="textSize_16 mb-2"> Our Projects </p>
             </Link>
 
-            <Link className='text-white' to="/contact-us">
+            <Link className="text-white" to="/contact-us">
               <p className="textSize_16 mb-2"> Contact us </p>
             </Link>
             <p className=" text-white">
@@ -81,8 +92,8 @@ const Footer = ({ siteTitle }) => (
               >
                 <FontAwesomeIcon
                   size="2x"
-                  icon={faInstagram}
-                  className="me-3 p-2 border-2 rounded-circle in"
+                  icon={faTwitter}
+                  className="me-3 p-2 border-2 rounded-circle tw fa-height"
                 />
               </a>
               <a
@@ -92,8 +103,8 @@ const Footer = ({ siteTitle }) => (
               >
                 <FontAwesomeIcon
                   size="2x"
-                  icon={faTwitter}
-                  className="me-3 p-2 border-2 rounded-circle tw"
+                  icon={faInstagram}
+                  className="me-3 p-2 border-2 rounded-circle in fa-height"
                 />
               </a>
               <a
@@ -104,7 +115,7 @@ const Footer = ({ siteTitle }) => (
                 <FontAwesomeIcon
                   size="2x"
                   icon={faLinkedinIn}
-                  className="me-3 p-2 border-2 rounded-circle ldin"
+                  className="me-3 p-2 border-2 rounded-circle ldin fa-height"
                 />
               </a>
             </p>

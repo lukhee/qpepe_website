@@ -54,7 +54,7 @@ const ContactPage = () => {
                       htmlFor="full_name"
                       className="form-label text-start"
                     >
-                      Full_Name
+                      Full Name
                     </label>
                     <div className="form-group mb-3">
                       <input
@@ -66,7 +66,7 @@ const ContactPage = () => {
                       />
                     </div>
                     <label htmlFor="email" className="form-label text-start">
-                      Work Email
+                      Email
                     </label>
                     <div className="form-group mb-3">
                       <input
@@ -108,7 +108,7 @@ const ContactPage = () => {
                   </div> */}
                   <button
                     disabled={!visibility}
-                    className="btn w-100 fw-bold btn-success col-12"
+                    className="btn w-100 fw-bold btn-secondary col-12"
                     type="submit"
                   >
                     Submit

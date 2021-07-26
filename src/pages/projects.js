@@ -25,7 +25,7 @@ const ProjectsPage = ({ data }) => {
                 <div key={product.id} className="col-sm-12 col-md-4">
                   <div className="m-2">
                     <div className="card rounded-0 border-0">
-                      <div className="card-body text-start bg-light shadow-sm">
+                      <div className="card-body text-start bg-light shadow-lg rounded">
                         <h3 className="card-title">{product.title}</h3>
                         <p className="card-text">{product.description}</p>
                         <GatsbyImage
