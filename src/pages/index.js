@@ -110,7 +110,7 @@ const IndexPage = ({ data }) => {
                   data-sal-delay="600"
                   data-sal="slide-up"
                   data-sal-easing="ease"
-                  className="bg-light shadow border border-light rounded p-2 pt-3 mb-4"
+                  className="bg-light shadow-lg border border-light rounded p-2 pt-3 mb-4"
                 >
                   <h4 className="mb-2">
                     <span className="bg-secondary text-white px-2 py-1 rounded">
@@ -127,7 +127,7 @@ const IndexPage = ({ data }) => {
                   data-sal-delay="800"
                   data-sal="slide-up"
                   data-sal-easing="ease"
-                  className="bg-light shadow border border-light rounded p-2 pt-3 mb-4"
+                  className="bg-light shadow-lg border border-light rounded p-2 pt-3 mb-4"
                 >
                   <h4 className="mb-2">
                     <span className="bg-secondary text-white px-2 py-1 rounded">
@@ -143,7 +143,7 @@ const IndexPage = ({ data }) => {
                   data-sal-delay="1000"
                   data-sal="slide-up"
                   data-sal-easing="ease"
-                  className="bg-light shadow border border-light rounded p-2 pt-3 mb-4"
+                  className="bg-light shadow-lg border border-light rounded p-2 pt-3 mb-4"
                 >
                   <h4 className="mb-1">
                     <span className="bg-secondary text-white px-2 py-1 rounded">

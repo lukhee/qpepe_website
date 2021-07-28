@@ -13,7 +13,12 @@ import {
   faLinkedinIn,
   faTwitter,
   faInstagram,
+  faFacebook,
 } from "@fortawesome/free-brands-svg-icons"
+const facebook_url = process.env.FACEBOOK_URL
+const linkedIn_url = process.env.LINKEDIN_URL
+const twitter_url = process.env.TWITTER_URL
+const instagram_url = process.env.INSTAGRAM_URL
 
 const Footer = ({ siteTitle }) => (
   <footer className="bg-dark text-white py-4">
@@ -49,7 +54,7 @@ const Footer = ({ siteTitle }) => (
                 icon={faEnvelope}
                 className="me-3"
               />
-              <span className="textSize_16">moshood@gmail.com </span>
+              <span className="textSize_16">Info@qpepe.com</span>
             </p>
             <p className="mb-2">
               <FontAwesomeIcon
@@ -58,7 +63,7 @@ const Footer = ({ siteTitle }) => (
                 icon={faPhoneAlt}
                 className="me-3"
               />
-              <span className="textSize_16">00090234765388 </span>
+              <span className="textSize_16">+65 8401 3953 </span>
             </p>
             <p className="mb-2">
               <FontAwesomeIcon
@@ -68,7 +73,7 @@ const Footer = ({ siteTitle }) => (
                 className="me-3"
               />
               <span className="textSize_16">
-                50 Graduate Park Suite 340, Organ, MA 9864.{" "}
+                4a Jalan Ayer, 389142 Singapore
               </span>
             </p>
           </div>
@@ -85,33 +90,28 @@ const Footer = ({ siteTitle }) => (
               <p className="textSize_16 mb-2"> Contact us </p>
             </Link>
             <p className=" text-white">
-              <a
-                href="https://example.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={twitter_url} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   size="2x"
                   icon={faTwitter}
                   className="me-3 p-2 border-2 rounded-circle tw fa-height"
                 />
               </a>
-              <a
-                href="https://example.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={instagram_url} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   size="2x"
                   icon={faInstagram}
                   className="me-3 p-2 border-2 rounded-circle in fa-height"
                 />
               </a>
-              <a
-                href="https://example.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={facebook_url} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon
+                  size="2x"
+                  icon={faFacebook}
+                  className="me-3 p-2 border-2 rounded-circle ldin fa-height"
+                />
+              </a>
+              <a href={linkedIn_url} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   size="2x"
                   icon={faLinkedinIn}

@@ -780,7 +780,7 @@ pre tt:after {
 }
 
 .fa-height{
-  width: 35px;
+  width: 35px !important;
   height: 35px;
 }
 

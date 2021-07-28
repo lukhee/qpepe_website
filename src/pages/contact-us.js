@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-// import ReCAPTCHA from "react-google-recaptcha"
+import ReCAPTCHA from "react-google-recaptcha"
 import emailjs from "emailjs-com"
 
 import Layout from "../components/layout"
@@ -10,12 +10,11 @@ import Toast from "../components/widgets/toast"
 const service_id = process.env.EMAILJS_SERVICE_ID
 const template_id = process.env.EMAILJS_TEMPLATE_ID
 const user_id = process.env.EMAILJS_USER_ID
-// ! please change the secret key from recapcha
-// const recaptha_key = process.env.RECAPTHA_SECRET_KEY
+const recaptcha_key = process.env.RECAPTHA_SITE_KEY
 
 const ContactPage = () => {
   const [toastValue, setToastValue] = useState(false)
-  const [visibility, setVisibility] = useState(true)
+  const [visibility, setVisibility] = useState(false)
 
   const recaptchaHandler = value => {
     setVisibility(true)
@@ -99,13 +98,13 @@ const ContactPage = () => {
                     your email onto third parties.{" "}
                   </p>
 
-                  {/* <div>
+                  <div>
                     <ReCAPTCHA
                       className="w-100 my-3"
-                      sitekey={recaptha_key}
+                      sitekey={recaptcha_key}
                       onChange={recaptchaHandler}
                     />
-                  </div> */}
+                  </div>
                   <button
                     disabled={!visibility}
                     className="btn w-100 fw-bold btn-secondary col-12"
