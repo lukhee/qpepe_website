@@ -8,6 +8,15 @@ module.exports = {
     author: `Balogun Lukman`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ["G-RBDKTCHB9B"],
+        pluginConfig: {
+          head: true,
+        },
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
