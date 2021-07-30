@@ -3,13 +3,14 @@ import { Toast } from "react-bootstrap"
 
 const ToastSample = ({ toastValue }) => {
   const [show, setShow] = useState(false)
+  console.log(toastValue)
   useEffect(() => {
     setShow(toastValue)
   }, [toastValue])
 
   return (
     <Toast
-      className="bg-white text-success position-absolute top-0 end-0 text-center fw-bold border shadow-md"
+      className="bg-white text-success position-absolute top-50 start-100 translate-middle text-center fw-bold border shadow-md"
       onClose={() => setShow(false)}
       show={show}
       delay={9000}
