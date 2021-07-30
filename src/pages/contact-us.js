@@ -50,7 +50,7 @@ const ContactPage = () => {
                 <form onSubmit={sendEmail}>
                   <div className="row">
                     <label
-                      htmlFor="full_name"
+                      htmlFor="Full Name"
                       className="form-label text-start"
                     >
                       Full Name
@@ -60,7 +60,7 @@ const ContactPage = () => {
                         type="text"
                         className="form-control bg-light"
                         id="full_name"
-                        name="full_name"
+                        name="name"
                         required
                       />
                     </div>
