@@ -14,7 +14,7 @@ const recaptcha_key = process.env.RECAPTHA_SITE_KEY
 
 const ContactPage = () => {
   const [toastValue, setToastValue] = useState(false)
-  const [visibility, setVisibility] = useState(false)
+  const [visibility, setVisibility] = useState(true)
 
   const recaptchaHandler = value => {
     setVisibility(true)
@@ -87,8 +87,8 @@ const ContactPage = () => {
                     <textarea
                       className="form-control bg-light"
                       id="massage"
-                      name="massage"
-                      rows="7"
+                      name="message"
+                      rows="4"
                     ></textarea>
                   </div>
                   <p className='text-muted' style={{ fontSize: "14px", textAlign: "left" }}>
