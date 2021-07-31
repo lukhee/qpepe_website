@@ -12,9 +12,11 @@ const template_id = process.env.EMAILJS_TEMPLATE_ID
 const user_id = process.env.EMAILJS_USER_ID
 const recaptcha_key = process.env.RECAPTHA_SITE_KEY
 
+console.log(recaptcha_key)
+
 const ContactPage = () => {
   const [toastValue, setToastValue] = useState(false)
-  const [visibility, setVisibility] = useState(true)
+  const [visibility, setVisibility] = useState(false)
 
   const recaptchaHandler = value => {
     setVisibility(true)
@@ -91,10 +93,7 @@ const ContactPage = () => {
                       rows="4"
                     ></textarea>
                   </div>
-                  <p
-                    className="text-muted"
-                    style={{ fontSize: "14px", textAlign: "left" }}
-                  >
+                  <p className='text-muted' style={{ fontSize: "14px", textAlign: "left" }}>
                     By submitting this form you consent to us emailing you
                     occasionally about our products and services. You can
                     unsubscribe from emails at any time, and we will never pass
@@ -104,7 +103,7 @@ const ContactPage = () => {
                   <div>
                     <ReCAPTCHA
                       className="w-100 my-3"
-                      sitekey="6Le3-88bAAAAAAUtKsSs877VIJlSY5dUdvCmWOu3"
+                      sitekey={recaptcha_key}
                       onChange={recaptchaHandler}
                     />
                   </div>
