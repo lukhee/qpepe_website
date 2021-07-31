@@ -19,7 +19,7 @@ const ProjectsPage = ({ data }) => {
         </div>
         <div className="bg-white text-center py-5">
           <div className="container">
-            <h1> Our Beautifully Crafted Apps</h1>
+            <h1> Our Sample Apps</h1>
             <div className="row">
               {projects.map(product => (
                 <div key={product.id} className="col-sm-12 col-md-4">
@@ -27,7 +27,7 @@ const ProjectsPage = ({ data }) => {
                     <div className="card rounded-0 border-0">
                       <div className="card-body text-start bg-light shadow-lg rounded">
                         <h3 className="card-title">{product.title}</h3>
-                        <p className="card-text">{product.description}</p>
+                        <p className="card-text text-secondary">{product.description}</p>
                         <GatsbyImage
                           image={
                             product.image.src.childrenImageSharp[0]

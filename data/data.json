@@ -75,20 +75,20 @@
   {
     "whatweoffer": [
       {
-        "title": "Development",
-        "content": "Manage ~ your daily administrative tasks conveniently from one place. Reservations, invoices, guest communication, housekeeping and reporting.",
+        "title": "Secure Website",
+        "content": "Every website ~ or app is secure and built on latest versions of open source content .",
         "fontAwesomeIndex": 0,
         "category": "what_we_offer"
       },
       {
-        "title": "Progress",
-        "content": "Manage ~ your daily administrative tasks conveniently from one place. Reservations, invoices, guest communication, housekeeping and reporting.",
+        "title": "Software Support",
+        "content": "Dedicated ~ software engineers will ensure 24/7 support for your software, wherever your users are.",
         "fontAwesomeIndex": 1,
         "category": "what_we_offer"
       },
       {
-        "title": "Development",
-        "content": "Manage ~ your daily administrative tasks conveniently from one place. Reservations, invoices, guest communication, housekeeping and reporting.",
+        "title": "Customer Success",
+        "content": "Support ~ to enhance your customers’ experience, at every step of the lifecycle.",
         "fontAwesomeIndex": 2,
         "category": "what_we_offer"
       }

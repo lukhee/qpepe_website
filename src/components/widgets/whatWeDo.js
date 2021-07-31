@@ -1,12 +1,13 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
-  faGem,
-  faChartLine,
+  faShieldAlt,
+  faHeadphones,
   faProjectDiagram,
+  faChartLine
 } from "@fortawesome/free-solid-svg-icons"
 
-const fontIcon = [faGem, faChartLine, faProjectDiagram]
+const fontIcon = [faShieldAlt, faHeadphones, faChartLine]
 
 const WhatWeDo = ({ whatWeOfferData }) => {
   return (
@@ -31,12 +32,14 @@ const WhatWeDo = ({ whatWeOfferData }) => {
             data-sal-easing="ease"
           >
             <div className="row p-3 rounded m-1 h-100 shadow">
-              <div className="col-md-2 col-12 mb-1 text-center">
-                <FontAwesomeIcon
-                  size="2x"
-                  icon={fontIcon[data.fontAwesomeIndex]}
-                  className="text-secondary"
-                />
+              <div className="col-md-2 col-12 mb-1 text-center p-0">
+                <div className='p-2 bg-secondary rounded'>
+                  <FontAwesomeIcon
+                    size="2x"
+                    icon={fontIcon[data.fontAwesomeIndex]}
+                    className="text-white"
+                  />
+                </div>
               </div>
               <div className="col-md-10 col-12 text-center">
                 <h3 className="mb-3 text-md-start  text-dark">{data.title}</h3>

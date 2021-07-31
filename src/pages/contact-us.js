@@ -12,11 +12,9 @@ const template_id = process.env.EMAILJS_TEMPLATE_ID
 const user_id = process.env.EMAILJS_USER_ID
 const recaptcha_key = process.env.RECAPTHA_SITE_KEY
 
-console.log(recaptcha_key)
-
 const ContactPage = () => {
   const [toastValue, setToastValue] = useState(false)
-  const [visibility, setVisibility] = useState(false)
+  const [visibility, setVisibility] = useState(true)
 
   const recaptchaHandler = value => {
     setVisibility(true)
@@ -101,11 +99,11 @@ const ContactPage = () => {
                   </p>
 
                   <div>
-                    <ReCAPTCHA
+                    {/* <ReCAPTCHA
                       className="w-100 my-3"
                       sitekey={recaptcha_key}
                       onChange={recaptchaHandler}
-                    />
+                    /> */}
                   </div>
                   <button
                     disabled={!visibility}

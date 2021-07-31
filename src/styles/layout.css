@@ -735,6 +735,19 @@ pre tt:after {
   border-radius: 2px;
 }
 
+.txt-wrap {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.txt-wrap:hover {
+  -webkit-line-clamp: 5;
+  transition-delay: 0.5s;
+  cursor: pointer;
+}
+
 .App {
   text-align: center;
 }
@@ -779,7 +792,7 @@ pre tt:after {
   background: #ff1493;
 }
 
-.fa-height{
+.fa-height {
   width: 35px !important;
   height: 35px;
 }

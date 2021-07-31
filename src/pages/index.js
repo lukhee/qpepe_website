@@ -29,8 +29,8 @@ const IndexPage = ({ data }) => {
                   data-sal="fade"
                   data-sal-easing="ease"
                 >
-                  Grab <span className="underline">Your Visitors</span>{" "}
-                  Attention
+                  Grow your <span className="underline"> Business</span> with
+                  QPEPE
                 </h1>
                 <div
                   data-sal-delay="900"
@@ -38,9 +38,8 @@ const IndexPage = ({ data }) => {
                   data-sal-easing="ease"
                 >
                   <p className="text-secondary">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s.
+                    QPEPE delivers the technical capability and professional
+                    solutions that enable exceptional client services
                   </p>
                   <button
                     onClick={() => navigate("/contact-us")}
@@ -78,10 +77,11 @@ const IndexPage = ({ data }) => {
             <span className="underline fs-1"> Get to know us better </span>
           </p>
           <p className="col-md-8 col-12 text-secondary">
-            Trusting a company and investing your hard-earned money is a quite
-            challenging and an overwhelming process. In order to guide you in
-            the process and make a better decision, we have explained each and
-            every steps right from How MacAppStudio is created to our process.
+            QPEPE is a web development agency. Our experienced web designers,
+            UX/UI specialists, web developers, SEOs, digital marketers and
+            managers specialize in business websites creation. We will deliver
+            you marketing and technology solutions to achieve your company's
+            goals in the best way.
           </p>
           <div className="row mb-3 justify-content-between">
             <div className="col-md-5">
@@ -101,11 +101,13 @@ const IndexPage = ({ data }) => {
 
             <div className="col-md-6">
               <div className="pb-3 text-md-start text-center">
-                <h3 className="lh-base">
+                <p className="lh-base">
                   We love to work with clients all over the world to develop
-                  unique, <span className="underline"> innovative </span> and{" "}
-                  <span className="underline"> modern websites.</span>
-                </h3>
+                  unique,{" "}
+                  <span className="underline fw-bold"> innovative </span> and{" "}
+                  <span className="underline fw-bold">modern websites</span>{" "}
+                  using the following methods:
+                </p>
                 <div
                   data-sal-delay="600"
                   data-sal="slide-up"
@@ -114,13 +116,14 @@ const IndexPage = ({ data }) => {
                 >
                   <h4 className="mb-2">
                     <span className="bg-secondary text-white px-2 py-1 rounded">
-                      Everything at one place
+                      DESIGN SERVICE
                     </span>
                   </h4>
-                  <p className="text-secondary pb-0 mb-1">
-                    The foundation of MacAppStudio is the friendship between
-                    George and Suresh. MacAppStudio is founded based on trust
-                    and that is the core of our company culture till today.
+                  <p className="text-secondary pb-0 mb-1 txt-wrap">
+                    qpepe digital design agency creates the professional,
+                    mobile-friendly, sustainable website design, that converts
+                    visitors into customers and increases ranking in Google and
+                    major search engines.
                   </p>
                 </div>
                 <div
@@ -131,12 +134,15 @@ const IndexPage = ({ data }) => {
                 >
                   <h4 className="mb-2">
                     <span className="bg-secondary text-white px-2 py-1 rounded">
-                      You are never alone
+                      SEO SERVICES
                     </span>
                   </h4>
-                  <p className="text-secondary pb-0 mb-1">
-                    Our devoted customer support team with great problem solving
-                    skills is always ready to assist you.
+                  <p className="text-secondary pb-0 mb-1 txt-wrap">
+                    Your business site has to be a good source of leads and
+                    revenue for you. QPEPE’s professional SEO services connect
+                    your audience with your business online. We create the
+                    proper SEO marketing strategy that will significantly
+                    increase the visibility and authority of your business.
                   </p>
                 </div>
                 <div
@@ -147,14 +153,16 @@ const IndexPage = ({ data }) => {
                 >
                   <h4 className="mb-1">
                     <span className="bg-secondary text-white px-2 py-1 rounded">
-                      On-the-go solutions
+                      Business Packages
                     </span>
                   </h4>
-                  <p className="text-secondary pb-0 mb-1">
-                    Keep up with back-office tasks within a few clicks. It’s not
-                    a problem if you are on your way somewhere! SabeeApp hotel
-                    management software runs in the cloud and you can reach it
-                    from anywhere and from any device.
+                  <p className="text-secondary pb-0 mb-1 txt-wrap">
+                    Website development package is the special offer for a
+                    business. It means the low cost beautiful responsive
+                    tailor-made websites at fixed prices. All web development
+                    packages include responsive web design, WordPress
+                    development, a set of pages, basic SEO and other features
+                    which provided for by this package.
                   </p>
                 </div>
               </div>
