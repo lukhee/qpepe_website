@@ -91,7 +91,10 @@ const ContactPage = () => {
                       rows="4"
                     ></textarea>
                   </div>
-                  <p className='text-muted' style={{ fontSize: "14px", textAlign: "left" }}>
+                  <p
+                    className="text-muted"
+                    style={{ fontSize: "14px", textAlign: "left" }}
+                  >
                     By submitting this form you consent to us emailing you
                     occasionally about our products and services. You can
                     unsubscribe from emails at any time, and we will never pass
@@ -101,7 +104,7 @@ const ContactPage = () => {
                   <div>
                     <ReCAPTCHA
                       className="w-100 my-3"
-                      sitekey={recaptcha_key}
+                      sitekey="6Le3-88bAAAAAAUtKsSs877VIJlSY5dUdvCmWOu3"
                       onChange={recaptchaHandler}
                     />
                   </div>
