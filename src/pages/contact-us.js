@@ -14,7 +14,7 @@ const siteKey = process.env.RECAPTHA_SITE_KEY
 
 const ContactPage = () => {
   const [toastValue, setToastValue] = useState(false)
-  const [visibility, setVisibility] = useState(true)
+  const [visibility, setVisibility] = useState(false)
 
   const recaptchaHandler = value => {
     setVisibility(true)
