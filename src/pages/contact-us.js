@@ -10,7 +10,7 @@ import Toast from "../components/widgets/toast"
 const service_id = process.env.EMAILJS_SERVICE_ID
 const template_id = process.env.EMAILJS_TEMPLATE_ID
 const user_id = process.env.EMAILJS_USER_ID
-const recaptcha_key = process.env.RECAPTHA_SITE_KEY
+const siteKey = process.env.RECAPTHA_SITE_KEY
 
 const ContactPage = () => {
   const [toastValue, setToastValue] = useState(false)
@@ -102,11 +102,11 @@ const ContactPage = () => {
                   </p>
 
                   <div>
-                    {/* <ReCAPTCHA
+                    <ReCAPTCHA
                       className="w-100 my-3"
-                      sitekey={recaptcha_key}
+                      sitekey={siteKey}
                       onChange={recaptchaHandler}
-                    /> */}
+                    />
                   </div>
                   <button
                     disabled={!visibility}
