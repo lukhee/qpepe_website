@@ -45,7 +45,7 @@ const ContactPage = () => {
         <div className="py-4 bg-white">
           <div className="container position-relative">
             <Toast toastValue={toastValue} />
-            <div className="row justify-content-around">
+            <div className="row justify-content-around mx-0">
               <div className="text-center col-md-5 shadow-lg pt-4 p-3 rounded">
                 <form onSubmit={sendEmail}>
                   <div className="row">
@@ -91,7 +91,10 @@ const ContactPage = () => {
                       rows="4"
                     ></textarea>
                   </div>
-                  <p className='text-muted' style={{ fontSize: "14px", textAlign: "left" }}>
+                  <p
+                    className="text-muted"
+                    style={{ fontSize: "14px", textAlign: "left" }}
+                  >
                     By submitting this form you consent to us emailing you
                     occasionally about our products and services. You can
                     unsubscribe from emails at any time, and we will never pass

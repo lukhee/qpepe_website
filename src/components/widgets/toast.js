@@ -10,10 +10,10 @@ const ToastSample = ({ toastValue }) => {
 
   return (
     <Toast
-      className="bg-white text-success position-absolute top-50 start-100 translate-middle text-center fw-bold border shadow-md"
+      className="bg-white text-success position-absolute top-0 start-50 translate-middle text-center fw-bold border shadow-md"
       onClose={() => setShow(false)}
       show={show}
-      delay={9000}
+      delay={8000}
       autohide
     >
       <Toast.Body>Thank you!</Toast.Body>

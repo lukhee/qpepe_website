@@ -18,8 +18,11 @@ const NotFoundPage = () => (
           className="m-auto mb-3"
         />
       </div>
-      <p className="text-danger fw-bold"> Page you are requesting doesn't exit please!!!</p>
-      <button className="btn btn-secondary" onClick={() => navigate("/")}>
+      <p className="text-danger fw-bold">
+        {" "}
+        Page you are requesting doesn't exit please!!!
+      </p>
+      <button className="btn-success" onClick={() => navigate("/")}>
         Go Back Home
       </button>
     </div>

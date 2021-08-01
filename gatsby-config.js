@@ -4,8 +4,12 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `QPEPE`,
-    description: `qpepe consulting website`,
-    author: `Balogun Lukman`,
+    description: `QPEPE is a web development agency. Our experienced web designers,
+    UX/UI specialists, web developers, SEOs, digital marketers and
+    managers specialize in business websites creation. We will deliver
+    you marketing and technology solutions to achieve your company's
+    goals in the best way.`,
+    author: `Moshood Awari`,
   },
   plugins: [
     {

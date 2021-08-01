@@ -4,7 +4,7 @@ import {
   faShieldAlt,
   faHeadphones,
   faProjectDiagram,
-  faChartLine
+  faChartLine,
 } from "@fortawesome/free-solid-svg-icons"
 
 const fontIcon = [faShieldAlt, faHeadphones, faChartLine]
@@ -33,7 +33,7 @@ const WhatWeDo = ({ whatWeOfferData }) => {
           >
             <div className="row p-3 rounded m-1 h-100 shadow">
               <div className="col-md-2 col-12 mb-1 text-center p-0">
-                <div className='p-2 bg-secondary rounded'>
+                <div className="p-2 btn-secondary rounded">
                   <FontAwesomeIcon
                     size="2x"
                     icon={fontIcon[data.fontAwesomeIndex]}
@@ -44,7 +44,7 @@ const WhatWeDo = ({ whatWeOfferData }) => {
               <div className="col-md-10 col-12 text-center">
                 <h3 className="mb-3 text-md-start  text-dark">{data.title}</h3>
                 <p className="mb-1 text-md-start">
-                  <span className="bg-secondary text-white px-1 me-1 fw-bold">
+                  <span className="btn-secondary text-white px-1 me-1 fw-bold">
                     {data.content.split("~")[0]}
                   </span>
                   <span className="text-secondary">
