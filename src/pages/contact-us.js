@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 
-import ReCAPTCHA from "react-google-recaptcha"
 import emailjs from "emailjs-com"
 
 import Layout from "../components/layout"
@@ -10,15 +9,9 @@ import Toast from "../components/widgets/toast"
 const service_id = process.env.EMAILJS_SERVICE_ID
 const template_id = process.env.EMAILJS_TEMPLATE_ID
 const user_id = process.env.EMAILJS_USER_ID
-const siteKey = process.env.RECAPTHA_SITE_KEY
 
 const ContactPage = () => {
   const [toastValue, setToastValue] = useState(false)
-  const [visibility, setVisibility] = useState(false)
-
-  const recaptchaHandler = value => {
-    setVisibility(true)
-  }
 
   const sendEmail = e => {
     e.preventDefault()
@@ -102,14 +95,8 @@ const ContactPage = () => {
                   </p>
 
                   <div>
-                    <ReCAPTCHA
-                      className="w-100 my-3"
-                      sitekey={siteKey}
-                      onChange={recaptchaHandler}
-                    />
                   </div>
                   <button
-                    disabled={!visibility}
                     className="btn w-100 fw-bold btn-secondary col-12"
                     type="submit"
                   >
