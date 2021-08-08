@@ -48,6 +48,10 @@
   position: relative;
 }
 
+.link:hover{
+  color: #0D6EFD
+}
+
 .underline:after {
   position: absolute;
   content: "";
@@ -57,5 +61,5 @@
   left: 0;
   right: 0;
   width: 100%;
-  background: #6c757d;
+  background: #0D6EFD;
 }

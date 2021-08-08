@@ -5,14 +5,21 @@ import { Nav, Container, Navbar } from "react-bootstrap"
 import * as style from "../styles/header.module.css"
 
 const Header = ({ siteTitle }) => (
-  <Navbar sticky="top" collapseOnSelect expand="md" className="bg-light">
+  <Navbar
+    sticky="top"
+    collapseOnSelect
+    expand="md"
+    className="bg-light rounded"
+  >
     <Container className={style.header}>
       <Navbar.Brand
         className="justify-content-between"
         style={{ fontSize: "1.8rem", fontWeight: "bold" }}
       >
         <Link to="/">
-          qp<span className="bg-secondary text-white">epe </span>
+          <span>q</span>
+          <span>p</span>
+          <span className="bg-primary text-danger">e<span className="text-warning">pe</span> </span>
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle
@@ -25,14 +32,14 @@ const Header = ({ siteTitle }) => (
       >
         <Nav className="ps-1 m-2 inline-block">
           <span className="fw-bold">
-            <Link to="/" activeClassName={style.underline}>
+            <Link to="/" className={style.link}>
               Who we are ?
             </Link>
           </span>
         </Nav>
         <Nav className="ps-1 m-2 inline-block">
           <span className="fw-bold">
-            <Link to="/projects" activeClassName={style.underline}>
+            <Link to="/projects" className={style.link}>
               Our Projects
             </Link>
           </span>
@@ -41,8 +48,8 @@ const Header = ({ siteTitle }) => (
           <span className="fw-bold">
             <Link
               to="/contact-us"
-              activeClassName={style.underline}
-              className="btn btn-secondary text-white btn-sm fw-bold"
+              // activeClassName={style.underline}
+              className="btn btn-primary text-white btn-sm fw-bold"
             >
               Contacts Us
             </Link>

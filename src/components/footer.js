@@ -21,27 +21,26 @@ const twitter_url = process.env.TWITTER_URL
 const instagram_url = process.env.INSTAGRAM_URL
 
 const Footer = ({ siteTitle }) => (
-  <footer className="bg-dark text-white py-4">
+  <footer className="bg-primary rounded mb-2 text-white py-4">
     <div className="container">
       <div className="row">
         <div className="col-md-6">
           <h3 className="pt-3"> Stay Connected</h3>
           <h2 className="fs-4 lh-base">
-            <span className="bg-white text-dark fw-bold p-1 me-1">qpepe</span>
+            <span className="bg-white text-dark fw-bold p-1 me-1">
+              <span>q</span>
+              <span>p</span>
+              <span className="bg-primary text-danger">
+                e<span className="text-warning">pe</span>{" "}
+              </span>
+            </span>
             Development Technology Consulting Research and Development{" "}
           </h2>
           <button
             onClick={() => navigate("/contact-us")}
-            className="btn btn-light fw-bold text-dark mb-3"
+            className="btn btn-light fw-bold text-primary mb-3"
           >
             Get in Touch
-            <span className="ms-2 p-1 px-2 rounded-circle bg-dark">
-              <FontAwesomeIcon
-                size="1x"
-                icon={faGreaterThan}
-                className="text-white"
-              />
-            </span>
           </button>
         </div>
         <div className="col-md-6 row justify-content-between fw-bold">
@@ -123,7 +122,12 @@ const Footer = ({ siteTitle }) => (
         </div>
       </div>
       <hr className="bg-white mt-2" />
-      <p className="text-center mb-0 text-muted">Qpepe @copyright 2021</p>
+      <p
+        style={{ color: "rgba(255,255,255,.5)" }}
+        className="text-center mb-0"
+      >
+        Qpepe @copyright 2021
+      </p>
     </div>
   </footer>
 )

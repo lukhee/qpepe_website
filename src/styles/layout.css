@@ -512,6 +512,11 @@ blockquote *:last-child {
 li *:last-child {
   margin-bottom: 0;
 }
+p {
+  font-size: 0.9rem;
+  /* line-height: 1.1875rem; */
+  font-weight: 400;
+}
 p *:last-child {
   margin-bottom: 0;
 }
@@ -600,8 +605,14 @@ pre tt:after {
 }
 
 .underline {
-  /* background-image: linear-gradient(#fab901 0%, #fab901 100%); */
-  background-image: linear-gradient(#6c757d45 0%, #6c757dad 100%);
+  background-image: linear-gradient(#dc35458a 0%, #dc3545d4 100%);
+  background-size: 100% 0.25em;
+  background-repeat: no-repeat;
+  background-position: 0 80%;
+}
+
+.underline_light {
+  background-image: linear-gradient(#fab901 0%, #fab901 100%);
   background-size: 100% 0.25em;
   background-repeat: no-repeat;
   background-position: 0 80%;
@@ -618,15 +629,20 @@ pre tt:after {
 
 .banner {
   /* position: relative; */
-  height: 430px;
+  height: 370px;
 }
 
 .banner-image {
   position: absolute;
-  top: 0;
   right: 0;
   bottom: 0;
   z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .banner-image {
+    display: none;
+  }
 }
 
 /* Testimonial  */
@@ -734,6 +750,16 @@ pre tt:after {
   width: 30px;
   border-radius: 2px;
 }
+.connect_img {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -45%);
+  -ms-transform: translate(-50%, -45%);
+  transform: translate(-50%, -45%);
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+}
 
 .txt-wrap {
   display: -webkit-box;
@@ -753,43 +779,47 @@ pre tt:after {
 }
 
 .fb {
-  color: #3b5998;
-  border: 1px solid #3b5998;
+  /* color: #3b5998; */
+  color: white;
+  border: 1px solid white;
 }
 
 .fb:hover {
-  color: white;
-  background: #3b5998;
+  color: #0e76a8;
+  background: white;
 }
 
 .tw {
-  color: #1da1f2;
-  border: 1px solid #1da1f2;
+  /* color: #1da1f2; */
+  color: white;
+  border: 1px solid white;
 }
 
 .tw:hover {
-  color: white;
-  background: #1da1f2;
+  color: #0e76a8;
+  background: white;
 }
 
 .ldin {
-  color: #0e76a8;
-  border: 1px solid #0e76a8;
+  /* color: #0e76a8; */
+  color: white;
+  border: 1px solid white;
 }
 
 .ldin:hover {
-  color: white;
-  background: #0e76a8;
+  color: #0e76a8;
+  background: white;
 }
 
 .in {
-  color: #ff1493;
-  border: 1px solid #ff1493;
+  /* color: #ff1493; */
+  color: white;
+  border: 1px solid white;
 }
 
 .in:hover {
-  color: white;
-  background: #ff1493;
+  color: #0e76a8;
+  background: white;
 }
 
 .fa-height {

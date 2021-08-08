@@ -13,24 +13,23 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <Seo title="Home" />
-      <div className="container py-5">
+      <div className="container-fluid py-5 bg-light rounded position-relative" style={{zIndex: 1}}>
         <div className="banner">
-          <div className="col-12 col-md-6 my-auto col-xs-12 p-2 h-100">
+          <div className="col-12 col-md-10 col-lg-6 mx-md-auto mx-lg-1 my-auto col-xs-12 p-2 h-100">
             <div
               data-sal-delay="200"
               data-sal="fade"
               data-sal-easing="ease"
-              className="bg-white p-5 shadow-lg h-100 rounded"
+              className="bg-white p-3 py-5 p-md-5 shadow-lg h-100 rounded"
             >
-              <div className="m-auto">
+              <div className="m-auto text-center text-lg-start">
                 <h1
                   className="fs-1"
                   data-sal-delay="400"
                   data-sal="fade"
                   data-sal-easing="ease"
                 >
-                  Grow your <span className="underline"> Business</span> with
-                  QPEPE
+                  Grow your Business with QPEPE
                 </h1>
                 <div
                   data-sal-delay="900"
@@ -43,7 +42,7 @@ const IndexPage = ({ data }) => {
                   </p>
                   <button
                     onClick={() => navigate("/contact-us")}
-                    className="btn btn-secondary fw-bold mb-3"
+                    className="btn btn-primary fw-bold mb-3"
                   >
                     Get in Touch
                   </button>
@@ -59,8 +58,9 @@ const IndexPage = ({ data }) => {
                     src="../images/banners/christina-wocintechchat-com-PbUShBsiwZI-unsplash.jpg"
                     alt="logo 2"
                     placeholder="blurred"
-                    width={800}
-                    height={650}
+                    layout="fullWidth"
+                    // width={800}
+                    // height={500}
                     className="my-auto w-100"
                   />
                 </div>
@@ -73,9 +73,7 @@ const IndexPage = ({ data }) => {
       {/* About Page */}
       <div className="bg-white py-5 mb-4">
         <div className="container">
-          <p className="text-md-start text-center">
-            <span className="underline fs-1"> Get to know us better </span>
-          </p>
+          <h1 className="text-md-start text-center">Get to know us better</h1>
           <p className="col-md-8 col-12 text-secondary">
             QPEPE is a web development agency. Our experienced web designers,
             UX/UI specialists, web developers, SEOs, digital marketers and
@@ -84,9 +82,9 @@ const IndexPage = ({ data }) => {
             goals in the best way.
           </p>
           <div className="row mb-3 justify-content-between">
-            <div className="col-md-5">
+            <div className="col-lg-5">
               <div className="h-175 mb-3">
-                <div className="p-5 bg-secondary rounded">
+                <div className="p-5 bg-light rounded">
                   <StaticImage
                     src="../images/banners/rubaitul-azad-QeXsrpjsVPM-unsplash.jpg"
                     alt="logo 2"
@@ -99,13 +97,15 @@ const IndexPage = ({ data }) => {
               </div>
             </div>
 
-            <div className="col-md-6">
+            <div className="col-lg-6">
               <div className="pb-3 text-md-start text-center">
                 <p className="lh-base">
                   We love to work with clients all over the world to develop
                   unique,{" "}
                   <span className="underline fw-bold"> innovative </span> and{" "}
-                  <span className="underline fw-bold">modern websites</span>{" "}
+                  <span className="underline_light fw-bold">
+                    modern websites
+                  </span>{" "}
                   using the following methods:
                 </p>
                 <div
@@ -115,7 +115,7 @@ const IndexPage = ({ data }) => {
                   className="bg-light shadow-lg border border-light rounded p-2 pt-3 mb-4"
                 >
                   <h4 className="mb-2">
-                    <span className="bg-secondary text-white px-2 py-1 rounded">
+                    <span className="bg-light border-warning  border text-dark px-2 py-1 rounded">
                       DESIGN SERVICE
                     </span>
                   </h4>
@@ -133,7 +133,7 @@ const IndexPage = ({ data }) => {
                   className="bg-light shadow-lg border border-light rounded p-2 pt-3 mb-4"
                 >
                   <h4 className="mb-2">
-                    <span className="bg-secondary text-white px-2 py-1 rounded">
+                    <span className="border-warning  border text-dark px-2 py-1 rounded">
                       SEO SERVICES
                     </span>
                   </h4>
@@ -152,7 +152,7 @@ const IndexPage = ({ data }) => {
                   className="bg-light shadow-lg border border-light rounded p-2 pt-3 mb-4"
                 >
                   <h4 className="mb-1">
-                    <span className="bg-secondary text-white px-2 py-1 rounded">
+                    <span className="border-warning  border text-dark px-2 py-1 rounded">
                       Business Packages
                     </span>
                   </h4>
@@ -174,9 +174,9 @@ const IndexPage = ({ data }) => {
       </div>
 
       {/* Clients */}
-      <div className="container pb-5 pt-4">
+      <div className="container pb-5 pt-4 bg-light">
         <div className="row justify-content-around text-center m-auto">
-          <div className="col col-lg-1 col-md-4 col-sm-3 col-xs-3 text-center m-auto">
+          <div className="col col-lg-1 col-md-3 col-sm-3 col-xs-3 text-center m-auto">
             <StaticImage
               src="../images/logo/product_logo1.svg"
               alt="logo 2"
@@ -232,9 +232,7 @@ const IndexPage = ({ data }) => {
       <div className="bg-white py-5">
         <div className="container py-4">
           <div className="row justify-content-around">
-            <p className="text-center mb-0">
-              <span className="underline fs-1"> Satisfied clients </span>
-            </p>
+            <h1 className="text-center mb-0"> Satisfied clients</h1>
             <Testimonial data={testimonialData} />
           </div>
         </div>

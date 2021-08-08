@@ -12,9 +12,9 @@ const ProjectsPage = ({ data }) => {
     <Layout>
       <Seo title="Page two" />
       <div>
-        <div className="container py-3 text-center">
+        <div className="container-fluid py-5 text-center bg-light">
           <h1>
-            <span className="underline"> Projects </span>
+            <span> Projects </span>
           </h1>
         </div>
         <div className="bg-white text-center py-5">
@@ -27,7 +27,9 @@ const ProjectsPage = ({ data }) => {
                     <div className="card rounded-0 border-0">
                       <div className="card-body text-start bg-light shadow-lg rounded">
                         <h3 className="card-title">{product.title}</h3>
-                        <p className="card-text text-secondary">{product.description}</p>
+                        <p className="card-text text-secondary">
+                          {product.description}
+                        </p>
                         <GatsbyImage
                           image={
                             product.image.src.childrenImageSharp[0]
@@ -47,7 +49,7 @@ const ProjectsPage = ({ data }) => {
             </div>
           </div>
           {/* Call of Action */}
-          <ContactCard/>
+          <ContactCard />
         </div>
       </div>
     </Layout>

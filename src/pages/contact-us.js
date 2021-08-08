@@ -30,16 +30,16 @@ const ContactPage = () => {
     <Layout>
       <Seo title="Contact Page" />
       <div>
-        <div className="container py-3 text-center">
+        <div className="container-fluid bg-light py-5 text-center">
           <h1>
-            <span className="underline"> Get in Touch </span>
+            <span> Get in Touch </span>
           </h1>
         </div>
         <div className="py-4 bg-white">
           <div className="container position-relative">
             <Toast toastValue={toastValue} />
             <div className="row justify-content-around mx-0">
-              <div className="text-center col-md-5 shadow-lg pt-4 p-3 rounded">
+              <div className="text-center col-lg-5 shadow-lg pt-4 p-3 rounded">
                 <form onSubmit={sendEmail}>
                   <div className="row">
                     <label
@@ -94,10 +94,9 @@ const ContactPage = () => {
                     your email onto third parties.{" "}
                   </p>
 
-                  <div>
-                  </div>
+                  <div></div>
                   <button
-                    className="btn w-100 fw-bold btn-secondary col-12"
+                    className="btn w-100 fw-bold btn-primary col-12"
                     type="submit"
                   >
                     Submit
